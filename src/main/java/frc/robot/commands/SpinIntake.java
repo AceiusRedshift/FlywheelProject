@@ -4,13 +4,19 @@ import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Shooter;
 
 public class SpinIntake extends Command {
+    private final Shooter shooter;
+    private final double speed;
+
     public SpinIntake(Shooter shooter, double speed) {
-        // Make sure to add requirements!
+        this.shooter = shooter;
+        this.speed = speed;
+
+        addRequirements(shooter);
     }
 
     @Override
     public void initialize() {
-        // This should be fairly obvious.
+        shooter.setFlywheelSpeed(speed);
     }
 
     @Override
