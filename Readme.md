@@ -20,8 +20,12 @@ This library provides the `CANSparkMax` motor class.
 https://software-metadata.revrobotics.com/REVLib-2024.json
 ```
 
-### CTRE Pheonix 5
-This library provides the `WPI_VictorSPX` motor class.
+### CTRE Pheonix
+This library provides the `WPI_VictorSPX` motor class. We need version 5 of the library, but in order to install version 5 you must install version 6 first:
+```
+https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-frc2024-latest.json
+```
+Then we can install v5:
 ```
 https://maven.ctr-electronics.com/release/com/ctre/phoenix/Phoenix5-frc2024-latest.json
 ```
