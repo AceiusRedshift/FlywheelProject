@@ -43,7 +43,7 @@ public class Shooter extends SubsystemBase {
      * @return If there is a note in the intake.
      */
     public boolean hasNoteInIntake() {
-        //
+        return false;
     }
 
     /**
